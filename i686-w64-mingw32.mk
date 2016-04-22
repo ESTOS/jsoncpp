@@ -4,6 +4,7 @@ TARGET=libkmsjsoncpp.dll
 
 ifdef DEBUG
 CXX += -g -o0
+TARGET_DIR = ./build/debug/
 endif
 
 CFLAGS= \
