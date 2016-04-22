@@ -1,6 +1,10 @@
-CXX=i686-w64-mingw32-g++ -g -o0
+CXX=i686-w64-mingw32-g++
 TARGET_DIR=./build/
 TARGET=libkmsjsoncpp.dll
+
+ifdef DEBUG
+CXX += -g -o0
+endif
 
 CFLAGS= \
 -I./include/
